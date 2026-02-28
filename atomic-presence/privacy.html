@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,72 @@
 </head>
 <body>
     <div class="container">
-        <h1>AtomicPresence 隱私權政策 / Privacy Policy</h1>
-        <p><strong>最後更新日期 / Last Updated:</strong> 2026-02-14</p>
+        <h1>AtomicPresence Privacy Policy / 隱私權政策</h1>
+        <p><strong>Last Updated / 最後更新日期:</strong> 2026-02-14</p>
+
+        <hr>
+
+        <h2>English</h2>
+
+        <h3>1. Overview</h3>
+        <p><strong>AtomicPresence</strong> (原子受訪, hereinafter referred to as "this App") is an interview protection application developed by <strong>Chengche Lee</strong>. It uses cryptographic hash chains and digital signatures to provide interviewees with tamper-proof, self-verifiable evidence capabilities. We adhere to a strict privacy-first policy.</p>
+        <p><strong>In short: We do NOT collect, store, or transmit any of your personal data to external servers. All recordings, videos, and signature data are stored exclusively on your device. No user data is collected.</strong></p>
+
+        <h3>2. Data Collection and Usage</h3>
+
+        <h4>Data We Do NOT Collect</h4>
+        <p>This App does not collect:</p>
+        <ul>
+            <li>Personally Identifiable Information (PII) such as name, email, or phone number</li>
+            <li>Location data</li>
+            <li>Device Identifiers</li>
+            <li>Usage analytics or tracking data</li>
+        </ul>
+
+        <h4>Locally Stored Data</h4>
+        <p>The following data is stored strictly on your device and is never transmitted externally:</p>
+        <ul>
+            <li><strong>Audio Recordings (Level 2):</strong> M4A audio evidence files stored in the app's Documents directory.</li>
+            <li><strong>Video Recordings (Level 3):</strong> MP4 video evidence files stored in the app's Documents directory.</li>
+            <li><strong>Digital Signature Evidence:</strong> JSON files containing hash chains, timestamps, and Curve25519/Ed25519 signatures, stored in the app's Documents directory.</li>
+            <li><strong>Signing Keys:</strong> Curve25519 signing keys securely stored in the iOS Keychain, existing only on your device.</li>
+            <li><strong>Preferences:</strong> Theme selection, audio quality mode, and other settings stored locally in UserDefaults.</li>
+        </ul>
+
+        <h3>3. Device Permissions</h3>
+        <p>This App requires the following device permissions, all used exclusively for local functionality:</p>
+        <ul>
+            <li><strong>Microphone:</strong> Used in Level 2 (Witness mode) to record audio evidence. Audio is stored only on your device.</li>
+            <li><strong>Camera:</strong> Used in Level 3 (Sovereign mode) to record video evidence. Video is stored only on your device.</li>
+            <li><strong>Photo Library:</strong> Optionally used to save video evidence to your Photo Library, only when you explicitly choose to do so.</li>
+        </ul>
+        <p><strong>All data captured via microphone and camera is never uploaded to any server.</strong></p>
+
+        <h3>4. Cryptography and Security</h3>
+        <p>This App uses Apple's CryptoKit framework for all cryptographic operations:</p>
+        <ul>
+            <li><strong>Hash Chains:</strong> Generated in real-time on-device using SHA-256, with no network communication involved.</li>
+            <li><strong>Digital Signatures:</strong> Uses Curve25519/Ed25519 algorithms. Keys are generated locally and stored in the iOS Keychain.</li>
+            <li><strong>No Cloud Verification:</strong> All evidence verification is performed entirely on-device, requiring no server connection.</li>
+        </ul>
+        <p><strong>No user data is collected.</strong></p>
+
+        <h3>5. Third-Party Services</h3>
+        <p>This App does <strong>NOT</strong> use any third-party analytics or advertising frameworks (No Google Analytics, No Facebook SDK, No Firebase, No Ads, No Crash Reporting).</p>
+
+        <h3>6. Network Access</h3>
+        <p>This App <strong>requires no network connection</strong>. All features — hash chain generation, QR code display, audio recording, video recording, digital signing, and evidence verification — work completely offline. The App does not initiate any network connections.</p>
+
+        <h3>7. Data Control</h3>
+        <ul>
+            <li>All evidence files are directly accessible and manageable through the iOS Files app.</li>
+            <li>Deleting the app removes all local data, including signing keys stored in the Keychain.</li>
+            <li>No account creation or login required.</li>
+        </ul>
+
+        <h3>8. Contact Us</h3>
+        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
+        <p>Email: <a href="mailto:qqder339@gmail.com?subject=[AtomicPresence]%20Privacy%20Policy%20Inquiry">qqder339@gmail.com</a></p>
 
         <hr>
 
@@ -82,70 +146,6 @@
         <h3>8. 聯絡我們</h3>
         <p>如果您對本隱私權政策有任何疑問，歡迎透過以下方式聯絡我們：</p>
         <p>電子郵件：<a href="mailto:qqder339@gmail.com?subject=[AtomicPresence]%20隱私權政策諮詢">qqder339@gmail.com</a></p>
-
-        <hr>
-
-        <h2>English</h2>
-
-        <h3>1. Overview</h3>
-        <p><strong>AtomicPresence</strong> (原子受訪, hereinafter referred to as "this App") is an interview protection application developed by <strong>Chengche Lee</strong>. It uses cryptographic hash chains and digital signatures to provide interviewees with tamper-proof, self-verifiable evidence capabilities. We adhere to a strict privacy-first policy.</p>
-        <p><strong>In short: We do NOT collect, store, or transmit any of your personal data to external servers. All recordings, videos, and signature data are stored exclusively on your device. No user data is collected.</strong></p>
-
-        <h3>2. Data Collection and Usage</h3>
-
-        <h4>Data We Do NOT Collect</h4>
-        <p>This App does not collect:</p>
-        <ul>
-            <li>Personally Identifiable Information (PII) such as name, email, or phone number</li>
-            <li>Location data</li>
-            <li>Device Identifiers</li>
-            <li>Usage analytics or tracking data</li>
-        </ul>
-
-        <h4>Locally Stored Data</h4>
-        <p>The following data is stored strictly on your device and is never transmitted externally:</p>
-        <ul>
-            <li><strong>Audio Recordings (Level 2):</strong> M4A audio evidence files stored in the app's Documents directory.</li>
-            <li><strong>Video Recordings (Level 3):</strong> MP4 video evidence files stored in the app's Documents directory.</li>
-            <li><strong>Digital Signature Evidence:</strong> JSON files containing hash chains, timestamps, and Curve25519/Ed25519 signatures, stored in the app's Documents directory.</li>
-            <li><strong>Signing Keys:</strong> Curve25519 signing keys securely stored in the iOS Keychain, existing only on your device.</li>
-            <li><strong>Preferences:</strong> Theme selection, audio quality mode, and other settings stored locally in UserDefaults.</li>
-        </ul>
-
-        <h3>3. Device Permissions</h3>
-        <p>This App requires the following device permissions, all used exclusively for local functionality:</p>
-        <ul>
-            <li><strong>Microphone:</strong> Used in Level 2 (Witness mode) to record audio evidence. Audio is stored only on your device.</li>
-            <li><strong>Camera:</strong> Used in Level 3 (Sovereign mode) to record video evidence. Video is stored only on your device.</li>
-            <li><strong>Photo Library:</strong> Optionally used to save video evidence to your Photo Library, only when you explicitly choose to do so.</li>
-        </ul>
-        <p><strong>All data captured via microphone and camera is never uploaded to any server.</strong></p>
-
-        <h3>4. Cryptography and Security</h3>
-        <p>This App uses Apple's CryptoKit framework for all cryptographic operations:</p>
-        <ul>
-            <li><strong>Hash Chains:</strong> Generated in real-time on-device using SHA-256, with no network communication involved.</li>
-            <li><strong>Digital Signatures:</strong> Uses Curve25519/Ed25519 algorithms. Keys are generated locally and stored in the iOS Keychain.</li>
-            <li><strong>No Cloud Verification:</strong> All evidence verification is performed entirely on-device, requiring no server connection.</li>
-        </ul>
-        <p><strong>No user data is collected.</strong></p>
-
-        <h3>5. Third-Party Services</h3>
-        <p>This App does <strong>NOT</strong> use any third-party analytics or advertising frameworks (No Google Analytics, No Facebook SDK, No Firebase, No Ads, No Crash Reporting).</p>
-
-        <h3>6. Network Access</h3>
-        <p>This App <strong>requires no network connection</strong>. All features — hash chain generation, QR code display, audio recording, video recording, digital signing, and evidence verification — work completely offline. The App does not initiate any network connections.</p>
-
-        <h3>7. Data Control</h3>
-        <ul>
-            <li>All evidence files are directly accessible and manageable through the iOS Files app.</li>
-            <li>Deleting the app removes all local data, including signing keys stored in the Keychain.</li>
-            <li>No account creation or login required.</li>
-        </ul>
-
-        <h3>8. Contact Us</h3>
-        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
-        <p>Email: <a href="mailto:qqder339@gmail.com?subject=[AtomicPresence]%20Privacy%20Policy%20Inquiry">qqder339@gmail.com</a></p>
 
         <hr>
 
